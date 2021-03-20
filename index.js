@@ -2,15 +2,16 @@
 // *** Uncomment the lines below to test
 
 // const counter = 2
-
 // var counter = 1
 // var counter = 2
 
+// 1. counter is the variable name and value is 1
 let counter = 1
+// 2. reassign the value of counter to 2
 counter = 2
 
 console.log("%cQuestion 1", "color: red") 
-
+// 3. return value 2 because you reassign the value to 2
 console.log(counter) 
 // // => 2
 console.log("%c----------", "color: red") 
@@ -21,6 +22,7 @@ console.log("%c----------", "color: red")
 // *** after testing, comment the line causing the error back in 
 // *** otherwise, the error will stop the rest of your code from running
 
+// 1. name is the variable name and you can't reassign anymore after created
 const name = "Yu"
 
 console.log("%cQuestion 2", "color: red") 
@@ -35,16 +37,18 @@ console.log("%c----------", "color: red")
 
 // ***** Question 3 *****
 // *** Uncomment the lines below to test
-
+// 1. convert ruby method to JS function
 function drinkWater(currentThirstLevel) {
+// 2. console is like "put" in ruby
   console.log("Man, I sure am thirsty")
-  currentThirstLevel -= 1
   console.log("Ahh that hits the spot")
+// 3. currentThirstLevel -= 1 means currentThirstLevel = currentThirstLevel - 1
+  currentThirstLevel -= 1
   return currentThirstLevel
 }
 
 console.log("%cQuestion 3", "color: red") 
-
+// 4. 12 -= 1 => 12-1=11
 console.log(drinkWater(12))
 // // => "Man I sure am thirsty"
 // // => "Ahh that hits the spot"
@@ -61,9 +65,12 @@ function sameSameButDifferent(num, maybeNum) {
   
     return "same same"
   }
-  else{
+  else if (num == maybeNum){
 
     return "same same (but different)"       
+}
+else {
+  return "different"
 }
 }
 console.log("%cQuestion 4", "color: red") 
